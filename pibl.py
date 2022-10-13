@@ -5,7 +5,7 @@ class ConexionCliente(threading.Thread):
     
     def log(self,line):
         with open("logPIBL.txt", "a") as f:
-            f.write(line)
+            f.write(line+'\n')
         return print(line)
 
     def __init__(self,ip_cliente,socket_cliente):
@@ -17,12 +17,14 @@ class ConexionCliente(threading.Thread):
     def run(self):
         self.log(f"[NUEVO THREAD]: {self.name}")
         request = ''
+        self.socket_cliente.sendall(bytes("Servidor dice hola",'UTF-8'))
         while True:
             data = self.socket_cliente.recv(2048)
             request = data.decode()
             if request=='exit':
               break
-            self.log(f"*REQUEST* {request}")
+            self.socket_cliente.send(bytes(request,'UTF-8'))#echo para permitir envio continuo
+            self.log(f"* REQUEST {self.ip_cliente}* {request}")
 
         self.log(f"[FINALIZO CONEXION]: {self.ip_cliente}")
         return
@@ -44,12 +46,11 @@ def setup(file):
                 elif line.startswith("HOSTS"):
                     p = line[line.index("=")+1:]
                     p = p.split(",")
-                    print(p)
                     params["hosts"] = p
         return True, params
     except:
-        print("falsed")
         return False, params
+
 
 if __name__ == "__main__":
 
