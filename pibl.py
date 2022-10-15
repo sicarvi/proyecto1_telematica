@@ -1,8 +1,7 @@
 import socket, os , time, sys
 import threading
-
 class ConexionCliente(threading.Thread):
-    
+    body = ""
     def log(self,line):
         with open("logPIBL.txt", "a") as f:
             f.write(line+'\n')
@@ -13,6 +12,9 @@ class ConexionCliente(threading.Thread):
         self.socket_cliente = socket_cliente
         self.ip_cliente = ip_cliente
         self.log(f"[NUEVA CONEXION]: {ip_cliente}")
+        #self.log(f"Ip del cliente: {ip_cliente[0]}")
+        
+
     
     def run(self):
         self.log(f"[NUEVO THREAD]: {self.name}")
@@ -28,6 +30,11 @@ class ConexionCliente(threading.Thread):
 
         self.log(f"[FINALIZO CONEXION]: {self.ip_cliente}")
         return
+
+    def crearHttp(ip, body): 
+        #necesito request, ip_cliente[0]
+
+        pass
 
 
 
@@ -60,7 +67,6 @@ if __name__ == "__main__":
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as servidor:
             servidor.bind((HOST, PORT))
             print("Servidor listo y esperando")
-
             while True:
                 servidor.listen()
                 socketcliente, dircliente = servidor.accept()

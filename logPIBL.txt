@@ -6,3 +6,78 @@
 * REQUEST ('127.0.0.1', 64123)* test
 * REQUEST ('127.0.0.1', 64123)* ing
 [FINALIZO CONEXION]: ('127.0.0.1', 64123)
+[NUEVA CONEXION]: ('127.0.0.1', 61805)
+[NUEVO THREAD]: CL-('127.0.0.1', 61805)
+* REQUEST ('127.0.0.1', 61805)* This is from Client
+* REQUEST ('127.0.0.1', 61805)* hola
+[NUEVA CONEXION]: ('127.0.0.1', 61828)
+[NUEVO THREAD]: CL-('127.0.0.1', 61828)
+* REQUEST ('127.0.0.1', 61828)* This is from Client
+* REQUEST ('127.0.0.1', 61828)* hola
+* REQUEST ('127.0.0.1', 61805)* buenas tardes amiguitos como estan
+* REQUEST ('127.0.0.1', 61828)* Holis
+* REQUEST ('127.0.0.1', 61828)* como estas
+[NUEVA CONEXION]: ('127.0.0.1', 55806)
+[NUEVO THREAD]: CL-('127.0.0.1', 55806)
+* REQUEST ('127.0.0.1', 55806)* This is from Client
+[NUEVA CONEXION]: ('127.0.0.1', 55836)
+[NUEVO THREAD]: CL-('127.0.0.1', 55836)
+* REQUEST ('127.0.0.1', 55836)* This is from Client
+* REQUEST ('127.0.0.1', 55836)* hola
+* REQUEST ('127.0.0.1', 55836)* hola
+* REQUEST ('127.0.0.1', 55836)* hola
+* REQUEST ('127.0.0.1', 55836)* hola
+* REQUEST ('127.0.0.1', 55836)* hola
+* REQUEST ('127.0.0.1', 55836)* hola
+* REQUEST ('127.0.0.1', 55836)* hola
+* REQUEST ('127.0.0.1', 55836)* hola
+* REQUEST ('127.0.0.1', 55836)* hola
+* REQUEST ('127.0.0.1', 55836)* hola
+* REQUEST ('127.0.0.1', 55836)* hola
+* REQUEST ('127.0.0.1', 55836)* hola
+* REQUEST ('127.0.0.1', 55836)* hola
+* REQUEST ('127.0.0.1', 55836)* hola
+* REQUEST ('127.0.0.1', 55836)* hola
+[NUEVA CONEXION]: ('127.0.0.1', 55870)
+[NUEVO THREAD]: CL-('127.0.0.1', 55870)
+Data decodificado: This is from Client
+* REQUEST ('127.0.0.1', 55870)* This is from Client
+Data decodificado: como estas
+* REQUEST ('127.0.0.1', 55870)* como estas
+Data decodificado: como estas
+* REQUEST ('127.0.0.1', 55870)* como estas
+[NUEVA CONEXION]: ('127.0.0.1', 55986)
+[NUEVO THREAD]: CL-('127.0.0.1', 55986)
+Data decodificado: This is from Client
+* REQUEST ('127.0.0.1', 55986)* This is from Client
+[NUEVA CONEXION]: ('127.0.0.1', 56005)
+[NUEVA CONEXION]: ('127.0.0.1', 56021)
+tipo de estructura ip: <class 'tuple'>
+[NUEVO THREAD]: CL-('127.0.0.1', 56021)
+* REQUEST ('127.0.0.1', 56021)* This is from Client
+[NUEVA CONEXION]: ('127.0.0.1', 56052)
+Ip del cliente: 127.0.0.1
+[NUEVO THREAD]: CL-('127.0.0.1', 56052)
+* REQUEST ('127.0.0.1', 56052)* This is from Client
+[NUEVA CONEXION]: ('127.0.0.1', 56114)
+[NUEVA CONEXION]: ('127.0.0.1', 56214)
+[NUEVA CONEXION]: ('127.0.0.1', 56226)
+[NUEVA CONEXION]: ('127.0.0.1', 52245)
+[NUEVO THREAD]: CL-('127.0.0.1', 52245)
+* REQUEST ('127.0.0.1', 52245)* This is from Client
+Direcciones Ipv4: 2
+[NUEVA CONEXION]: ('127.0.0.1', 52251)
+[NUEVO THREAD]: CL-('127.0.0.1', 52251)
+* REQUEST ('127.0.0.1', 52251)* This is from Client
+Direcciones Ipv4: 2
+* REQUEST ('127.0.0.1', 52251)* hola
+Direcciones Ipv4: 2
+* REQUEST ('127.0.0.1', 52245)* como estas?
+Direcciones Ipv4: 2
+[NUEVA CONEXION]: ('127.0.0.1', 52298)
+[NUEVO THREAD]: CL-('127.0.0.1', 52298)
+* REQUEST ('127.0.0.1', 52298)* This is from Client
+Direcciones Ipv4: 23
+[NUEVA CONEXION]: ('127.0.0.1', 64709)
+[NUEVO THREAD]: CL-('127.0.0.1', 64709)
+* REQUEST ('127.0.0.1', 64709)* This is from Client
