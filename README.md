@@ -20,10 +20,10 @@ python pibl.py
 Si el archivo `serv.config` está correcto el proxy empezará a escuchar peticiones. De lo contrario, en consola aparecerá un mensaje el cual indicará al usuario que el archivo de configuración está incorrecto o no existe.
  
 ## ¿Por qué python?
-- La implementación de la librería de Threading es muy robusta y ofrece un desempeño similar a lenguajes de nivel más bajo lo que lo hace perfecto en términos de entendimiento/eficiencia
-- La facilidad de la lectura y compresión de la sintaxis permite a los desarrolladores tener un entorno más ameno a la hora del desarrollo
-- Python cuenta con una gran cantidad de métodos para el manejo de su facilidad de procesar almacenar y distribuir strings necesarios para el http
--Por permitir la programación orientada a objetos que se presta para este caso de uso especifico   
+- La implementación de la librería de Threading es muy robusta y ofrece un desempeño similar a lenguajes de nivel más bajo lo que lo hace perfecto en términos de entendimiento/eficiencia.
+- La facilidad de la lectura y compresión de la sintaxis permite a los desarrolladores tener un entorno más ameno a la hora del desarrollo.
+- Python cuenta con una gran cantidad de métodos para el manejo de strigs de igual manera tiene una gran cantidad de métodos para el manejo de archivos planos como el .txt, estos métodos son necesarios para el manejo y la estructura HTTP/1.1 
+- Python permite la programación orientada a objetos que se presta para este caso de uso especifico.   
 ## Introducción
 El proxy inverso actúa en este caso como un intermediario entre el cliente y los servidores recibiendo un request de parte del cliente, llevando este hasta alguno de los servidores y recibiendo un response de parte de los servidores retornándolo finalmente al cliente. En palabras resumidas el proxy inverso se utiliza como un intermediario para gestionar solicitudes y respuestas. Estos proxies inversos generalmente se utilizan para mejorar el rendimiento y proporcionar un equilibrio de carga para las aplicaciones web, esto lo logra implementando un balanceador de cargas siguiendo el principio de Round Robin, un algoritmo en el que a cada proceso se le asigna un intervalo de tiempo fijo de forma cíclica, esto permite una programación por turnos en donde se asigna una cantidad de tiempo particular a diferentes trabajos.
 
