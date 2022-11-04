@@ -30,7 +30,7 @@ El proxy inverso actúa en este caso como un intermediario entre el cliente y lo
 ## Desarrollo
 Este proyecto consta de 4 archivos importantes que serían `pibl.py`,`logPIBL.txt`,`serv.config`, `persist.cache`. 
 
-- `pibl.py`: Contiene la clase " " que se encarga de instanciar los métodos y atributos necesarios para que el proxy reciba peticiones de un cliente, para así, enviarlas a uno de los servidores de aplicación determinado por el método Round Robin y finalmente devolver la respectiva respuesta a el cliente original. Esta clase hereda de la implementación de `Thread` de python para que el proxy pueda generar un hilo de procesamiento por cada cliente y así atender solicitudes de manera concurrente.
+- `pibl.py`: Contiene la clase proxyInverso que se encarga de instanciar los métodos y atributos necesarios para que el proxy reciba peticiones de un cliente, para así, enviarlas a uno de los servidores de aplicación determinado por el método Round Robin y finalmente devolver la respectiva respuesta a el cliente original. Esta clase hereda de la implementación de `Thread` de python para que el proxy pueda generar un hilo de procesamiento por cada cliente y así atender solicitudes de manera concurrente.
 Además contiene el método `setup` que analiza el archivo de configuración para parametrizar la instancia del proxy.
 
 - `serv.config`: Este es el archivo de configuración de parámetros para el servidor donde recibe un puerto (en el que el proxy escucha las peticiones), proxy (dirección ip del proxy), y servers (string separada por comas de las direcciones ip y los puertos de los servidores donde va a estar alojada la aplicación).  Ejemplo:
